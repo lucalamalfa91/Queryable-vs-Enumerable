@@ -10,7 +10,7 @@ Frameworks (Entity Framework)
 - A: Yes.
   - Highlight that `IQueriable` is executed in SQL Server and `IEnumerable` is executed in the application's process (C#).
 
-## Plan
+## Recipe
 
 - Create a Console Application project and add Entity Framework. Nuget packages:
 
