@@ -1,33 +1,20 @@
 # Queryable vs Enumerable
 
-## Problem Description
+## Pill Category
 
-**Known: `DbSet` is `IQueriable`**
+Frameworks (Entity Framework)
 
-- We know that, in Entity Framework, the `DBSet` class implements `IQueriable` interface. So, all the Linq queries that we write are applied on an `IQueriable` object.
+## Description
 
-> The decompiled `DbSet`:
->
-> ```csharp
-> public abstract class DbSet<TEntity> : IQueryable<TEntity>, IAsyncEnumerable<TEntity>, IInfrastructure<IServiceProvider>, IListSource
->  where TEntity : class
-> ```
+**Known fact: `DbSet` is `IQueriable`**
 
-**Step 1: Cast `IQueriable` to `IEnumerable`**
+- In Entity Framework, the `DBSet` class implements `IQueriable` interface. So, all the Linq queries that we write are applied on an `IQueriable` object.
 
-- But, what happens if we cast this `IQueriable` to `IEnumerable`. By the way, we can do that because it inherits `IEnumerable`.
-  We also know that a cast does not change the instance in any other way in the memory. We interact with the same instance but using the specified interface to which we casted it to. So, it is the same old `IQueriable` object, but now, we see it as an `IEnumerable`.
+**Cast `IQueriable` to `IEnumerable`**
 
-> The decompiled `IQueryable`:
->
-> ```csharp
-> public interface IQueryable<[Nullable(2)] out T> : IEnumerable<T>, IEnumerable, IQueryable
-> ```
-
-**Step 2: Execute same Linq query**
-
-- We will apply the same Linq query on the `IEnumerable` instead of `IQueryable`.
+- But, what happens if we cast this `IQueriable` to `IEnumerable` and then apply the same Linq query?
 
 **Question**
 
-- Does the execution change in any way?
+- How is the execution affected if we cast the `IQueryable` to `IEnumerable` before applying that Linq query?
+
