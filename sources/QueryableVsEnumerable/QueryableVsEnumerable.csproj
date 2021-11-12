@@ -1,14 +1,36 @@
+<!--
+C# Pills 15mg
+Copyright (C) 2021 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <RootNamespace>DustInTheWind.QueryableVsEnumerable</RootNamespace>
+        <AssemblyName>DustInTheWind.QueryableVsEnumerable</AssemblyName>
+
         <Company>Dust in the Wind</Company>
         <Authors>Dust in the Wind</Authors>
         <Product>UsingVsTryFinally</Product>
-        <Description>A C# Pill that highlights that the Linq query applied after a cast to IEnumerable is not translated into SQL. Instead, it is run in memory. </Description>
         <Copyright>Copyright © Dust in the Wind 2020</Copyright>
+        <NeutralLanguage>en</NeutralLanguage>
+
+        <Description>A C# Pill that highlights that the Linq query applied after a cast to IEnumerable is not translated into SQL. Instead, it is run in memory.</Description>
     </PropertyGroup>
 
     <ItemGroup>

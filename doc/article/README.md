@@ -10,7 +10,7 @@
 >
 > ```csharp
 > public abstract class DbSet<TEntity> : IQueryable<TEntity>, IAsyncEnumerable<TEntity>, IInfrastructure<IServiceProvider>, IListSource
->     where TEntity : class
+>  where TEntity : class
 > ```
 
 **Step 1: Cast `IQueriable` to `IEnumerable`**

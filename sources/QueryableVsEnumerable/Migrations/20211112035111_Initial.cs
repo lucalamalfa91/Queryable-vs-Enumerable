@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace QueryableVsEnumerable.Migrations
+namespace DustInTheWind.QueryableVsEnumerable.Migrations
 {
     public partial class Initial : Migration
     {
@@ -24,10 +24,13 @@ namespace QueryableVsEnumerable.Migrations
                 columns: new[] { "Id", "Date" },
                 values: new object[,]
                 {
-                    { new Guid("b4a9dd01-856a-4c12-b4af-7e44638f7b55"), new DateTime(2021, 6, 27, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { new Guid("cd181292-a92f-4e87-847a-d11001fcd325"), new DateTime(2021, 6, 18, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { new Guid("13358824-9af8-4c4c-9f71-17ac64bf1b08"), new DateTime(2021, 5, 19, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { new Guid("e1c56df6-89b1-4389-a00f-69d395db2f39"), new DateTime(2021, 5, 4, 0, 0, 0, 0, DateTimeKind.Local) }
+                    { new Guid("96464eaf-47f5-4bfd-a182-36a30403cb4d"), new DateTime(2021, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { new Guid("7c4072f7-1365-4057-821f-69b0018a25d4"), new DateTime(2021, 10, 31, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { new Guid("33f0e58b-bc15-4c2a-b65b-1b693d1e2330"), new DateTime(2021, 12, 18, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { new Guid("182b2d60-9582-448d-83e7-22e98c818073"), new DateTime(2021, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { new Guid("3ab2d9f9-21ae-40d7-baae-4a75d02ff183"), new DateTime(2021, 11, 15, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { new Guid("61cb19f9-0985-4f01-a624-3dd4aed4ddbd"), new DateTime(2021, 12, 24, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { new Guid("5e78eb8c-7a77-4e50-9e79-3e782fd9e4d9"), new DateTime(2021, 11, 7, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
         }
 
